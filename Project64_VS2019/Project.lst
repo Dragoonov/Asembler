@@ -1,0 +1,38 @@
+Microsoft (R) Macro Assembler (x64) Version 14.29.30136.0   10/16/21 14:04:37
+test.asm						     Page 1 - 1
+
+
+				.386
+test.asm(1) : error A2008:syntax error : .
+				.model flat,stdcall
+test.asm(2) : error A2008:syntax error : .
+				option casemap :none
+				extrn ExitProcess@4 : PROC
+				.stack 4096
+test.asm(5) : error A2008:syntax error : .
+ 00000000			.code
+ 00000000			main PROC
+ 00000000  E8 00000000 E	call ExitProcess@4
+ 00000005			main ENDP
+				END main 
+Microsoft (R) Macro Assembler (x64) Version 14.29.30136.0   10/16/21 14:04:37
+test.asm						     Symbols 2 - 1
+
+
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+main . . . . . . . . . . . . . .	P 	 00000000 _TEXT	Length= 00000005 Public
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess@4  . . . . . . . . .	L 	 00000000 External
+
+	   0 Warnings
+	   5 Errors
